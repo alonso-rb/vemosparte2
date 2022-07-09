@@ -1,0 +1,22 @@
+version: '2'
+services:
+  app:
+    container_name: mindcareapp
+    restart: always
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/MindApi
+      - DEBUG=MindApi:*
+      - JWT_SECRET=Awerqw@#$$WER!@#$$!@%ETWEQR@!!asda123
+    build: .
+    ports:
+      - 3000:3000
+    links:
+      - mongo
+  mongo:
+    container_name: mongodb
+    image: mongo
+    ports:
+      - "27107:27107"
+    command: 
+      - "--logpath"
+      - "/var/log/mongodb/mongodb.log"
