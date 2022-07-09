@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>MindCare</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="Images/Mindlogo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">SITIO OFICIAL</a></li>
+                    <li><a href="about.html">ACERCA DE NOSOTROS</a></li>    
+                    <li><a href="contact.html">CONTACTO</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    <div class="text-box">
+        <h1>Porque la salud mental es importante</h1>
+        <p>
+            Lorem ipsum dolor sit, amet consecteturbr <br> adipisicing elit. Obcaecati, tempora.
+        </p>
+        <a href="contact.html" class="hero-btn">Contactanos</a>
+    </div>    
+    </section>
+    <!----Sobre Nosotros---->
+    <section class="services">
+        <h1>Servicios</h1>
+        <div class="row">
+            <div class="about-us-col">
+                <h3>Intermediarios</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, laboriosam?</p>
+            </div>
+            <div class="about-us-col">
+                <h3>Importancia de la salud</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, laboriosam?</p>
+            </div>
+            <div class="about-us-col">
+                <h3>Intermediarios</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, laboriosam?</p>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <h4>Acerca de nosotros</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, autem.</p>
+        <div class="icons">
+            <i class="fa fa-envelope"></i>
+            <i class="fa fa-phone" ></i>
+        </div>
+    </section>
+
+    
+<!-------JavaScript para visualizar Menu ------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>
